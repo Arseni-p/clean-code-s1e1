@@ -8,48 +8,48 @@
 <body class="body">
   <header>
     <div class="info__wrapper"><img class="app__image" src="./eisenhower-matrix.jpg" alt="app-image">
-      <a class="more__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <a class="more__info info__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div> 
   </header>
   <main class="main__container--wrapper">
     <div class="main__container">
       <section class="add-block__section">
         <p id="add-block__wrapper">
-          <label class="app__label" for="new__task">Add Item</label>
-          <div class="task__row--wrapper">
-            <input id="new__task"class="task app__input" type="text">
-            <button class="app__btn">Add</button>
+          <label class="add-block__label app__label" for="new__task">Add Item</label>
+          <div class="add-block__row--wrapper task__row--wrapper">
+            <input id="new__task" class="add-block__input task app__input" type="text">
+            <button class="add-block__btn app__btn">Add</button>
           </div>
         </p>
       </section>
-      <section class="add-block__section">
+      <section class="todo__section">
         <h3 class="app__title">Todo</h3>
         <ul id="todo__list" class="app__list">
-          <li class="app__item">
-            <input class="app__input" type="checkbox">
-            <label class="task app__label">Pay Bills</label>
-            <input type="text" value="Pay Bills" class="task app__input">
-            <button class="edit app__btn">Edit</button>
-            <button class="delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
+          <li class="todo__item app__item">
+            <input class="todo__input--checkbox app__input" type="checkbox">
+            <label class="todo__label task app__label">Pay Bills</label>
+            <input type="text" value="Pay Bills" class="todo__input--text task app__input">
+            <button class="todo__btn--edit edit app__btn">Edit</button>
+            <button class="todo__btn--delete delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
           </li>
-          <li class="edit-mode app__item">
-            <input class="app__input" type="checkbox">
-            <label class="task app__label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task app__input">
-            <button class="edit app__btn">Save</button>
-            <button class="delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
+          <li class="todo__item edit-mode app__item">
+            <input class="todo__input--checkobox app__input" type="checkbox">
+            <label class="todo__label task app__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo__input--text task app__input">
+            <button class="todo__btn--edit edit app__btn">Save</button>
+            <button class="todo__btn--delete delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
           </li>
         </ul>
       </section>
-      <section class="add-block__section">
+      <section class="complete__section">
         <h3 class="app__title">Completed</h3>
-        <ul id="completed__list" class="app__list">
-          <li class="app__item">
-            <input class="app__input" type="checkbox" checked>
-            <label class="task app__label">See the Doctor</label>
-            <input type="text" class="task app__input">
-            <button class="edit app__btn">Edit</button>
-            <button class="delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
+        <ul id="completed__list" class="complete__list pp__list">
+          <li class="complete__item app__item">
+            <input class="complete__input--checkbox app__input" type="checkbox" checked>
+            <label class="complete__label task app__label">See the Doctor</label>
+            <input type="text" class="complete__input--text task app__input">
+            <button class="complete__btn--edit edit app__btn">Edit</button>
+            <button class="complete__btn--delete delete app__btn"><img class="app__image" src="./remove.svg" alt="remove-img"></button>
           </li>
         </ul>
       </section>
