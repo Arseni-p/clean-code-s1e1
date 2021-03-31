@@ -6,45 +6,55 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
 <body class="body">
-  <div class="info__wrapper"><img class="app__image" src="./eisenhower-matrix.jpg">
-    <a class="more__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main__container">
-    <p id="add-block__wrapper">
-      <label class="app__label" for="new__task">Add Item</label>
-      <div class="task__row--wrapper">
-        <input id="new__task"class="task app__input" type="text">
-        <button class="app__btn">Add</button>
-      </div>
-    </p>
-    <h3 class="app__title">Todo</h3>
-    <ul id="todo__list" class="app__list">
-      <li class="app__item">
-        <input class="app__input" type="checkbox">
-        <label class="task app__label">Pay Bills</label>
-        <input type="text" value="Pay Bills" class="task app__input">
-        <button class="edit app__btn">Edit</button>
-        <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
-      </li>
-      <li class="edit-mode app__item">
-        <input class="app__input" type="checkbox">
-        <label class="task app__label">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task app__input">
-        <button class="edit app__btn">Save</button>
-        <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
-      </li>
-    </ul>
-    <h3 class="app__title">Completed</h3>
-    <ul id="completed__list" class="app__list">
-      <li class="app__item">
-        <input class="app__input" type="checkbox" checked>
-        <label class="task app__label">See the Doctor</label>
-        <input type="text" class="task app__input">
-        <button class="edit app__btn">Edit</button>
-        <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
-      </li>
-    </ul>
-  </div>
+  <header>
+    <div class="info__wrapper"><img class="app__image" src="./eisenhower-matrix.jpg">
+      <a class="more__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div> 
+  </header>
+  <main class="main__container--wrapper">
+    <div class="main__container">
+      <section class="add-block__section">
+        <p id="add-block__wrapper">
+          <label class="app__label" for="new__task">Add Item</label>
+          <div class="task__row--wrapper">
+            <input id="new__task"class="task app__input" type="text">
+            <button class="app__btn">Add</button>
+          </div>
+        </p>
+      </section>
+      <section class="add-block__section">
+        <h3 class="app__title">Todo</h3>
+        <ul id="todo__list" class="app__list">
+          <li class="app__item">
+            <input class="app__input" type="checkbox">
+            <label class="task app__label">Pay Bills</label>
+            <input type="text" value="Pay Bills" class="task app__input">
+            <button class="edit app__btn">Edit</button>
+            <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
+          </li>
+          <li class="edit-mode app__item">
+            <input class="app__input" type="checkbox">
+            <label class="task app__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task app__input">
+            <button class="edit app__btn">Save</button>
+            <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+      <section class="add-block__section">
+        <h3 class="app__title">Completed</h3>
+        <ul id="completed__list" class="app__list">
+          <li class="app__item">
+            <input class="app__input" type="checkbox" checked>
+            <label class="task app__label">See the Doctor</label>
+            <input type="text" class="task app__input">
+            <button class="edit app__btn">Edit</button>
+            <button class="delete app__btn"><img class="app__image" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
   <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
