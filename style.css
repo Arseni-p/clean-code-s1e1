@@ -157,6 +157,10 @@
   transform: rotateZ(0);
 }
 
+/* #completed__list {
+  padding-left: 0;
+} */
+
 /* Completed */
 #completed__list .app__label {
   text-decoration: line-through;
